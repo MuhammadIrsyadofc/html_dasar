@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>colspan</title>
+	<style>
+		body {
+			font-style: arial;
+			background-color: bisque;
+
+		}
+	   .borderstyle {border: 1px solid magenta;}
+	   td {color: blueviolet;}
+	   .borderstyle2 {border: 1px solid magenta;}
+	   td {color: blueviolet;}
+	   .colspanrowspan{
+		text-align: center;
+	   }
+	</style>
+</head>
+<body>
+	<br>
+	rowspan dan colspan :
+	<br><br>
+<table class="borderstyle" border="1" cellspacing="0" cellpadding="10">
+	<tr>
+	    <td rowspan="3">rowspan 3</td>
+		<td colspan="3">colspan 3</td>
+	</tr>
+	<tr>
+		<td>isi table 1</td>
+		<td>isi table 2</td>
+		<td>isi table 3</td>
+
+	</tr>
+	<tr>
+		<td>isi table 1</td>
+		<td>isi table 2</td>
+		<td>isi table 3</td>
+	</tr>
+</table>
+<br><br><br><br><br><br>
+menggabungkan colspan dan rowspan :
+<br><br>
+<table class="borderstyle2" border="1" cellspacing="0" cellpadding="50">
+	<tr>
+		<td>1,1</td>
+		<td>1,2</td>
+		<td>1,3</td>
+		<td>1,4</td>
+	</tr>
+	<tr>
+		<td>2,1</td>
+		<td class="colspanrowspan" colspan="2" rowspan="2">2</td>
+		<td>2,2</td>
+	</tr>
+	<tr>
+		<td>3,1</td>
+		<td>3,2</td>
+	</tr>
+	<tr>
+		<td>4,1</td>
+		<td>4,2</td>
+		<td>4,3</td>
+		<td>4,s4</td>
+	</tr>
+</table>
+
+<br><br><br><br><br><br>
+
+
+</body>
+</html>
